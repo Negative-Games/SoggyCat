@@ -1,0 +1,10 @@
+/target/classes/club/deltapvp/bot/Bot.class
+/target/classes/club/deltapvp/bot/api/command/Command.class
+/target/classes/club/deltapvp/bot/api/command/info/CommandInfo.class
+/target/classes/club/deltapvp/bot/commands/CommandJoe.class
+/target/classes/club/deltapvp/bot/api/command/registry/CommandRegistry.class
+/target/classes/club/deltapvp/bot/commands/CommandSudo.class
+/target/classes/club/deltapvp/bot/api/command/info/CommandType.class
+/target/classes/club/deltapvp/bot/api/command/exception/InvalidCommandInfoException.class
+/target/classes/club/deltapvp/bot/main/Main.class
+/target/*
