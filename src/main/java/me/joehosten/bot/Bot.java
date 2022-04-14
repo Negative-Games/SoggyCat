@@ -5,7 +5,6 @@ import lombok.SneakyThrows;
 import me.joehosten.bot.api.command.info.CommandType;
 import me.joehosten.bot.api.command.registry.CommandRegistry;
 import me.joehosten.bot.commands.CommandSoggyCat;
-import me.joehosten.bot.commands.CommandSudo;
 import me.joehosten.bot.core.properties.PropertiesConfiguration;
 import me.joehosten.bot.core.properties.PropertiesFile;
 import me.joehosten.bot.core.util.ProductionDiscord;
@@ -65,7 +64,6 @@ public class Bot extends ListenerAdapter {
 
         // Global Commands
         // Developer Commands
-        commandRegistry.registerCommand(new CommandSudo());
         commandRegistry.registerCommand(new CommandSoggyCat());
 
 

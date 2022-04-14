@@ -5,7 +5,7 @@ import me.joehosten.bot.api.command.info.CommandInfo;
 import me.joehosten.bot.api.command.info.CommandType;
 import net.dv8tion.jda.api.events.interaction.SlashCommandEvent;
 
-@CommandInfo(name = "soggycat", aliases = {"cat"}, description = "Sends the cat", type = CommandType.GLOBAL)
+@CommandInfo(name = "soggycat", aliases = {"cat"}, description = "Sends the cat", type = CommandType.DEV)
 public class CommandSoggyCat extends Command {
     @Override
     public void onCommand(SlashCommandEvent event) {

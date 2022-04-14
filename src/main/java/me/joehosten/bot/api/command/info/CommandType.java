@@ -7,7 +7,7 @@ import lombok.RequiredArgsConstructor;
 @Getter
 public enum CommandType {
 
-    DEV("912413951164289115"),
+    DEV("822346437240815656"),
     GLOBAL(null);
 
     // Guild ID

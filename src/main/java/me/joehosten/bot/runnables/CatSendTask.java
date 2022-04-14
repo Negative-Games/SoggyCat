@@ -21,7 +21,7 @@ public class CatSendTask {
 
         @Override
         public void run() {
-            int seconds = 1800;
+            int seconds = 86400;
             Timer timer = new Timer();
             timer.scheduleAtFixedRate(new Task(channel), 0, (1000L * seconds));
         }
@@ -38,14 +38,6 @@ public class CatSendTask {
         @Override
         public void run() {
             textChannel.sendMessage("https://pbs.twimg.com/media/FNb3SK0XsAIiDqT?format=jpg&name=medium").queue();
-            textChannel.sendMessage("` `").queue();
-            textChannel.sendMessage("` `").queue();
-            textChannel.sendMessage("` `").queue();
-            textChannel.sendMessage("OMG WOW ANOTHER CAT").queue();
-            textChannel.sendMessage("` `").queue();
-            textChannel.sendMessage("` `").queue();
-            textChannel.sendMessage("` `").queue();
-            textChannel.sendMessage("https://pbs.twimg.com/media/FPxa0kUXIAMGXj-?format=jpg&name=medium").queue();
             System.out.println("cat");
         }
     }
