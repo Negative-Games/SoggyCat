@@ -5,10 +5,10 @@ import me.joehosten.bot.api.command.info.CommandInfo;
 import me.joehosten.bot.api.command.info.CommandType;
 import net.dv8tion.jda.api.events.interaction.SlashCommandEvent;
 
-@CommandInfo(name = "soggycat", aliases = {"cat"}, description = "Sends the cat", type = CommandType.DEV)
+@CommandInfo(name = "soggycat", description = "Sends the cat", type = CommandType.DEV)
 public class CommandSoggyCat extends Command {
     @Override
     public void onCommand(SlashCommandEvent event) {
-        event.reply("https://pbs.twimg.com/media/FNb3SK0XsAIiDqT?format=jpg&name=medium").setEphemeral(false).queue();
+        event.reply("https://pbs.twimg.com/media/FNb3SK0XsAIiDqT?format=jpg&name=medium").setEphemeral(true).queue();
     }
 }
