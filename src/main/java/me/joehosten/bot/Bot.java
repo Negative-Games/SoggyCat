@@ -64,7 +64,7 @@ public class Bot extends ListenerAdapter {
 
         // Global Commands
         // Developer Commands
-        commandRegistry.registerCommand(new CommandSoggyCat());
+        commandRegistry.registerCommand(new CommandSoggyCat(botConfig));
 
 
         builder.addEventListeners(this);
