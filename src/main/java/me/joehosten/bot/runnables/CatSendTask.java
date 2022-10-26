@@ -1,5 +1,7 @@
 package me.joehosten.bot.runnables;
 
+import me.joehosten.bot.core.properties.PropertiesConfiguration;
+import me.joehosten.bot.core.properties.PropertiesFile;
 import net.dv8tion.jda.api.entities.TextChannel;
 
 import java.util.Timer;
@@ -30,6 +32,7 @@ public class CatSendTask {
     private static class Task extends TimerTask {
 
         private final TextChannel textChannel;
+        private final PropertiesConfiguration pc = new PropertiesConfiguration(new PropertiesFile(null, "bot.properties").asFile());
 
         public Task(TextChannel channel) {
             textChannel = channel;
@@ -37,7 +40,7 @@ public class CatSendTask {
 
         @Override
         public void run() {
-            textChannel.sendMessage("https://pbs.twimg.com/media/FNb3SK0XsAIiDqT?format=jpg&name=medium").queue();
+            textChannel.sendMessage(pc.getString("catimage")).queue();
             System.out.println("cat");
         }
     }
